@@ -19,7 +19,40 @@
     <link href="./assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="./assets/css/demo.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+
+
+    <style>
+    .video-thumbnail {
+      position: relative;
+      margin: 0;
+      padding: 0;  
+    }
+
+    .video-thumbnail:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      content: "\f01d";
+      font-family: FontAwesome;
+      font-size: 100px;
+      color: #fff;
+      opacity: .8;
+      text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-thumbnail:hover:before {
+      color: #eee;
+    }
+
+    .card-img-top {
+        width: 100%;
+    }    
+    </style>
+        
+
 </head>
 
 <body class="ecommerce-page">
@@ -138,26 +171,24 @@
                     <div class="page-header header-filter">
                         <div class="page-header-image" style="background-image: url('assets/img/workshop/video.jpg');"></div>
                         <div class="content-center text-center">
-                            <div class="row">
-                                <div class="col-md-8 ml-auto mr-auto2">
-                                    <h1 class="title">VIDEOS</h1>
-                                    <h4 class="description text-white">Hear from the teaching staff and students</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="carousel-item">
-                    <div class="page-header header-filter">
-                        <div class="page-header-image" style="background-image: url('assets/img/students/03.jpg');"></div>
-                        <div class="content-center text-center">
+
                             <div class="row">
-                                <div class="col-md-8 ml-auto mr-auto">
-                                    <h1 class="title">DATES</h1>
-                                    <h4 class="description text-white">The event will last a week, May 28th - June 1st, 2018</h4>
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+                                    <h1 class="title">VIDEOS</h1>
+                                    <h4 class="description text-white">Students activities, listen to the teaching staff</h4>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+
+                                    <div class="btn-group">
+                                        <a href="#videos" class="btn btn-info btn-round btn-lg">More Videos</a>
+                                    </div> 
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -166,15 +197,58 @@
                     <div class="page-header header-filter">
                         <div class="page-header-image" style="background-image: url('assets/img/students/02.jpg');"></div>
                         <div class="content-center text-center">
+
                             <div class="row">
-                                <div class="col-md-8 ml-auto mr-auto2">
-                                    <h1 class="title">EVENT AGENDA</h1>
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+                                    <h1 class="title">EVENT AGENDA & THEMES</h1>
                                     <h4 class="description text-white">View the workshop agenda</h4>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+
+                                    <div class="btn-group">
+                                        <a href="#themes" class="btn btn-info btn-round btn-lg">Agenda & Themes</a>
+                                    </div> 
+
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
+
+
+                <div class="carousel-item">
+                    <div class="page-header header-filter">
+                        <div class="page-header-image" style="background-image: url('assets/img/students/03.jpg');"></div>
+                        <div class="content-center text-center">
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto">
+                                    <h1 class="title">DATES & SCHEDULE</h1>
+                                    <h4 class="description text-white">The event will last a week, May 28th - June 1st, 2018</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+
+                                    <div class="btn-group">
+                                        <a href="#schedule" class="btn btn-info btn-round btn-lg">Dates & Schedule</a>
+                                    </div> 
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="carousel-item">
                     <div class="page-header header-filter">
@@ -186,6 +260,18 @@
                                     <h4 class="description text-white">Meet the MIT team</h4>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+
+                                    <div class="btn-group">
+                                        <a href="#team" class="btn btn-info btn-round btn-lg">Meet the Team</a>
+                                    </div> 
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -200,6 +286,18 @@
                                     <h4 class="description text-white">Companies/organizations supporting the workshop</h4>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+
+                                    <div class="btn-group">
+                                        <a href="#acknowledgements" class="btn btn-info btn-round btn-lg">Acknowledgements</a>
+                                    </div> 
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -214,6 +312,18 @@
                                     <h4 class="description text-white">Contact Information</h4>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto text-center">
+
+                                    <div class="btn-group">
+                                        <a href="#contactus" class="btn btn-info btn-round btn-lg">Contact Us</a>
+                                    </div> 
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>                                
@@ -284,12 +394,44 @@
                     <div class="row">
                         <div class="col-md-8 mr-auto ml-auto">
                             <h2 class="title"><i class="fa fa-video-camera" aria-hidden="true"></i> Videos</h2>
+                        </div>
+                    </div>
+
+                    <!-- Videos of girls singing and beats  -->
+                    <div class="row">
+                        <div class="col-md-8 mr-auto ml-auto">
+                            <h3 class="description">Beats & Singing</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 ml-auto mr-auto text-right">
+                            <a data-fancybox="gallery" href="https://www.youtube.com/embed/9gzk7o2K7HA">
+                              <div class="video-thumbnail">
+                                <img class="card-img-top" src="https://i.ytimg.com/vi/anWn77X-E3Y/hqdefault.jpg" alt="poster" >
+                              </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 ml-auto mr-auto text-right">
+                            <a data-fancybox="gallery" href="https://www.youtube.com/embed/9gzk7o2K7HA">
+                              <div class="video-thumbnail">
+                                <img class="card-img-top" src="https://i.ytimg.com/vi/MsA44xz0UPE/hqdefault.jpg" alt="poster" >
+                              </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Videos form the teaching staff  -->
+                    <div class="row" style="margin-top: 50px">
+                        <div class="col-md-8 mr-auto ml-auto">
                             <h3 class="description">Teaching Staff</h3>
                         </div>
                     </div>
                     <div id="tas"></div>
 
-
+                    <!-- Videos form the class activities  -->
                     <div class="row">
                         <div class="col-md-8 mr-auto ml-auto">
                             <h3 class="description">Activities Snippets</h3>
@@ -395,7 +537,7 @@
                 <div class="cards">
                     <div class="container">
                         <div class="title">
-                            <h2 class="title"><i class="fa fa-calendar" aria-hidden="true"></i> EVENT SCHEDULE</h2>
+                            <h2 class="title"><i class="fa fa-calendar" aria-hidden="true"></i> EVENT SCHEDULE, May 28th - June 1st, 2018</h2>
                         </div>
 
 
@@ -843,7 +985,7 @@
                                             <h4 class="card-title">Abel Sanchez</h4>
                                             <h6 class="category">Founder</h6>
                                             <p class="card-description">
-                                                Simplicity is the ultimate sophistication
+                                                Education is the kindling of a flame, not the filling of a vessel
                                             </p>
                                         </div>
                                     </div>
