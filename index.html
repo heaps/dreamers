@@ -147,24 +147,83 @@
 
 
 
-                                    <div style="display: inline-block; text-align: left;">
-                                        <h2>
-                                            <button class="btn btn-primary btn-round"><i class="fa fa-calendar" aria-hidden="true"></i> <b>date:</b> 5/27-5/31 2019</button><br>
 
-                                            <button class="btn btn-primary btn-round"><i class="fa fa-info-circle" aria-hidden="true"></i> <b> infosession:</b> 1/23,4-163, 12PM</button><br> 
+    <style>
 
-                                            <a href="https://docs.google.com/presentation/d/1W1v45XFhRAs6MxB_tgGV6dl9Vcjvyashf_ATCGHjplA/edit?usp=sharing" class="btn btn-primary btn-round"><i class="fa fa-slideshare" aria-hidden="true"></i> <b>infosession:</b> slides</a><br>
+        /* Tables
+        ================================== */
+        .info-table {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .info-table-cell {
+          box-sizing: border-box;
+          flex-grow: 1;
+          width: 100%;
+          padding: 0.25em 0.25em;
+          overflow: hidden;
+          list-style: none;
+          border: solid 3px rgba(255, 255, 255, 0.1);
+          background: rgba(249,99,50, 0.8);
 
-                                            <a href="https://youtu.be/jjonlnOEtwI" class="btn btn-primary btn-round"><i class="fa fa-video-camera" aria-hidden="true"></i> <b>infosession:</b> video</a><br>                                      
-                                            <a href="mailto:chicas@mit.edu?Subject=Beautiful%20Patterns" class="btn btn-primary btn-round"><i class="fa fa-envelope" aria-hidden="true"></i> <b>mail:</b> chicas@mit.edu</a><br>
+          font-size: 1.75rem;
+          font-family: inherit;
+          font-weight: 500;
+          line-height: 1.2;
+          color: inherit;
+          margin-top: 0;
+          margin-bottom: 0;
+          text-align: left;
+        }
 
-                                            <a href="https://www.dropbox.com/request/08VajNC3vgKmjfzw8of8" class="btn btn-primary btn-round"><i class="fa fa-upload" aria-hidden="true"></i> <b>apply:</b> bit.ly/cvs2019</a>
-                                        </h2>
-                                    </div>
+        /* Table column sizing
+        ================================== */
+        .info-table-column > .info-table-cell {
+          width: 50%;
+        }
+
+        /* formatting */
+        .info-strong {
+            font-weight: bolder;
+        }
+        .info-link {
+            color: white;
+        }
+        
+    </style>
 
 
 
-                                    <h4 class="description text-white">LEARNING DESIGN PATTERNS IS THE LIGHTING OF A FLAME, OUR GOAL IS TO SPARK YOUR DREAMS</h4>
+
+
+
+        <div class="card bg-transparent mp-0" style="width: 33rem;">
+
+            <div class="info-table info-table-column">
+
+                <div class="info-table-cell info-strong"><i class="fa fa-calendar" aria-hidden="true"></i> Workshop:</div>
+                <div class="info-table-cell">5/27-5/31 2019</div>
+
+                <div class="info-table-cell info-strong"><i class="fa fa-info-circle" aria-hidden="true"></i> Infosession:</div>
+                <div class="info-table-cell">1/23,4-163,12PM</div>
+
+                <div class="info-table-cell info-strong"><i class="fa fa-info-circle" aria-hidden="true"></i> Infosession:</div>
+                <div class="info-table-cell"><a href="https://docs.google.com/presentation/d/1W1v45XFhRAs6MxB_tgGV6dl9Vcjvyashf_ATCGHjplA/edit?usp=sharing" class="text-light"><i class="fa fa-slideshare" aria-hidden="true"></i> slides</a>, <a href="https://youtu.be/jjonlnOEtwI" class="text-light"><i class="fa fa-video-camera" aria-hidden="true"></i> video</a></div>
+
+                <div class="info-table-cell info-strong"><i class="fa fa-envelope" aria-hidden="true"></i> Contact:</div>
+                <div class="info-table-cell"><a href="mailto:chicas@mit.edu?Subject=Beautiful%20Patterns" class="text-light">chicas@mit.edu</a></div>
+
+                <div class="info-table-cell info-strong"><i class="fa fa-upload" aria-hidden="true"></i> Upload CV:</div>
+                <div class="info-table-cell"><a href="https://www.dropbox.com/request/08VajNC3vgKmjfzw8of8" class="text-light">bit.ly/cvs2019</a></div>
+
+            </div>
+
+        </div>
+
+
+
+
+
                                 </div>
                             </div>
                             <div class="row">
@@ -174,7 +233,7 @@
                                         <a href="#designPatterns" class="btn btn-info btn-round btn-sm">About</a>
                                     </div> 
                                     <div class="btn-group">
-                                        <a href="#videos" class="btn btn-info btn-round btn-sm">Video</a>
+                                        <a href="#videos" class="btn btn-info btn-round btn-sm">Videos</a>
                                     </div> 
                                     <div class="btn-group">
                                         <a href="#themes" class="btn btn-info btn-round btn-sm">Content</a>
